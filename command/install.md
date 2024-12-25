@@ -78,3 +78,10 @@ install a/* d
 其中d是目录。
 
 
+
+
+ **复制多个SOURCE文件到目的目录，更改文件所有者与权限，递归创建目标目录：** 
+
+```shell
+install -D -o root -g root -m 644 file1.txt file2.txt /path/to/target_dir/
+```
